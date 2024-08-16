@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react'
-import { navItems } from "@/app/constants"
+import { BaseUrl, navItems } from "@/app/constants/consts"
 import Link from 'next/link';
 import { Menu, X} from "lucide-react"
 import { Button } from '@nextui-org/button';
@@ -9,6 +9,7 @@ import { Button } from '@nextui-org/button';
 function Navbar() {
 
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false)
+    const [version, setVersion] = useState('0.0.1')
 
     const toggleNavbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen)
@@ -19,8 +20,11 @@ function Navbar() {
             <div className=' px-6 relative text-sm'>
                 <div className="flex justify-between items-center">
                     <div className="flex items-center flex-shrink-0">
-                        <img className='h-10 w-10 mr-2' src={`${process.env.NEXT_PUBLIC_BASE_URL}/logo.png`} alt="logo" />
-                        <span className='text-xl tracking-tight'>Phylogeny Lab</span>
+                        <img className='h-10 w-10 mr-2' src={`${BaseUrl}/assets/logo.png`} alt="logo" />
+                        <div className='flex items-baseline'>
+                            <span className='text-xl tracking-tight'>Phylogeny Lab</span>
+                            <span className='ml-3 font-thin'>{`v${version}`}</span>
+                        </div>
                     </div>
                     <ul className='hidden lg:flex ml-14 space-x-12'>
                         {navItems.map((item, index) => (
