@@ -71,26 +71,30 @@ export const checklistItems = [
   },
 ];
 
-export const resourcesLinks = [
+export const Tools = [
+  { name: 'Mr Bayes', href: '#', description: '' },
+  { name: 'Clustal', href: '#', description: '' },
+  { name: 'Muscle', href: '#', description: '' },
+  { name: 'Biopython', href: '#', description: '' },
+  { name: 'Biomart', href: '#', description: '' },
+  { name: 'NCBI Blast', href: '#', description: '' },
+]
+
+export const DocsLinks = [
   { href: "#", text: "Getting Started" },
   { href: "#", text: "Documentation" },
   { href: "#", text: "Tutorials" },
   { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
 ];
 
-export const platformLinks = [
+export const PlatformLinks = [
   { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
   { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
   { href: "#", text: "Release Notes" },
 ];
 
-export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
+export const CommunityLinks = [
+  { href: "https://discord.gg/ZmVn9Kzc9f", text: "Discord" },
+  { href: "#", text: "Contributing" },
+  { href: "https://patreon.com/GenomeLab?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink", text: "Patreon" },
 ];
