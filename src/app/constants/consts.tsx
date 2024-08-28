@@ -7,14 +7,19 @@ import { GlobeLock } from "lucide-react";
 
 import { FaDiscord } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { IoIosPaper } from "react-icons/io";
+import { RxFileText } from "react-icons/rx";
 import { IoIosHelpCircle } from "react-icons/io";
 
 export const BaseUrl = process.env.NEXT_PUBLIC_BASE_URL
 
+export const backgroundURLs = [
+  `${BaseUrl}/assets/blast_screenshot.png`,
+  `${BaseUrl}/assets/alignment_background.png`,
+]
+
 export const navItems = [
-  { label: "Docs", href: "#", icon: <IoIosPaper /> },
-  { label: "Tutorials", href: "#", icon: <IoIosHelpCircle /> },
+  { label: "Docs", href: "/docs", icon: <RxFileText /> },
+  { label: "Tutorials", href: "/tutorials", icon: <IoIosHelpCircle /> },
   { label: "Github", href: "https://github.com/Phylogeny-lab/Phylogeny-lab", icon: <FaGithub /> },
   { label: "Community", href: "https://discord.gg/ZmVn9Kzc9f", icon: <FaDiscord /> },
 ];
@@ -96,5 +101,5 @@ export const PlatformLinks = [
 export const CommunityLinks = [
   { href: "https://discord.gg/ZmVn9Kzc9f", text: "Discord" },
   { href: "#", text: "Contributing" },
-  { href: "https://patreon.com/GenomeLab?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink", text: "Patreon" },
+  { href: "https://patreon.com/GenomeLab?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink", text: "Donate" },
 ];
