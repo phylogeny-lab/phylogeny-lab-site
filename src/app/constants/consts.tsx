@@ -12,6 +12,8 @@ import { IoIosHelpCircle } from "react-icons/io";
 
 export const BaseUrl = process.env.NEXT_PUBLIC_BASE_URL
 
+export const GITHUB_REPO_CLONE = "https://github.com/phylogeny-lab/phylogeny-lab.git"
+
 export const backgroundURLs = [
   `${BaseUrl}/assets/blast_screenshot.png`,
   `${BaseUrl}/assets/alignment_background.png`,

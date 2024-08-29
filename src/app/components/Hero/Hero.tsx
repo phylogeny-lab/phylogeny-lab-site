@@ -12,7 +12,7 @@ function Hero() {
     const router = useRouter()
 
   return (
-    <div className={`flex flex-col items-center`} >
+    <div className={`flex flex-col items-center h-screen`} >
         {/* Photo by Nikolett Emmert on Unsplash
         https://unsplash.com/@niki_emmert?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
         Original photo:

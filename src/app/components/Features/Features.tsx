@@ -6,7 +6,7 @@ import React from 'react'
 
 function Features() {
   return (
-    <div className='relative mb-20 mt-20' id='features'>
+    <div className='relative mb-20 mt-60' id='features'>
         <h1 className='text-4xl sm:text-4xl lg:text-5xl mt-6 tracking-wide text-center mb-10'>Features</h1>
         <div className='flex flex-wrap justify-center'>
           <div className='p-2 w-full lg:w-1/2'>

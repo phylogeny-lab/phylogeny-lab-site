@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useMemo } from 'react'
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -54,13 +56,14 @@ function Carousel({ images, delay = 5000 }: Props) {
     };
 
     return (
-        <div className='flex-col justify-between gap-4 z-20'>
+        <div className='z-20'>
             <AnimatePresence>
                 <motion.img
                     className='rounded-lg border-1 border-neutral-700/80 shadow-lg mx-2 my-4 z-20'
                     key={currentIndex}
                     src={images[currentIndex]}
                     variants={slideVariants}
+                    fetchPriority='high'
                     initial={direction === "right" ? "hiddenRight" : "hiddenLeft"}
                     animate="visible"
                     exit="exit"
@@ -73,8 +76,6 @@ function Carousel({ images, delay = 5000 }: Props) {
                         key={index}
                         className={`dot ${currentIndex === index ? "active" : ""}`}
                         onClick={() => handleDotClick(index)}
-                        initial="initial"
-                        animate={currentIndex === index ? "animate" : ""}
                         whileHover="hover"
                     ></motion.div>
 
