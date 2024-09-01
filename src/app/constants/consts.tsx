@@ -43,7 +43,7 @@ export const DownloadData = [
   },
   {
     id: 3,
-    name: "Full stack",
+    name: "Run with Docker",
     background: "/assets/Downloads/card-3.svg",
     description:
       "Run a full stack locally and access in a web browser.",
