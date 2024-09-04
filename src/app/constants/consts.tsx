@@ -64,7 +64,7 @@ export const checklistItems = [
   {
     title: "Great UI",
     description:
-      "Easy-to-navigate pages and nice on the eyes.",
+      "Easy-to-navigate pages and built with modern frontend libraries MUI and NextUI.",
   },
   {
     title: "Flexible deployment",
